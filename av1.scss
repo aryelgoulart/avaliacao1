@@ -1,0 +1,684 @@
+
+
+	$azul: #106285;
+	$n:normal;
+	$rosa: #d93d4f;
+	$azulc: #5cc4c4;
+
+	@mixin fle {
+		display: flex;
+		flex-direction: row;
+	}
+	@mixin flec{
+		display: flex;
+		flex-direction: column;
+	}
+	@mixin clicli{
+		background: white;
+		margin-right:15px;		
+		padding: 10px;
+		h3{
+			margin:5px 0 0 2px;
+			
+		}
+
+		h5{
+			margin: 2px 0 0 2px;
+			font-weight: normal;
+		}
+	}
+
+	@mixin ass{
+
+		h5{
+		margin-top: 0;
+		margin-bottom: 5px;
+		}
+
+		img{
+			margin-bottom: 5px;
+		}
+
+
+	}
+	@mixin perfil{
+		padding: 15px 20px 15px 10px;			
+		border-radius: 50px;		
+		width: 20px;
+		height:20px;
+		margin:0;
+		color:white;
+		font-weight: normal;
+		font-size: 20px;
+
+	}
+	@mixin cari{
+		height: 33px;
+		width: 33px;
+		border-radius: 20px;
+
+	}
+
+	@mixin star{
+		margin-left: 33px;
+		height: 16px;
+		width: 16px;
+	}
+	@mixin table{
+		table{		
+
+				width:94%;	
+				text-align: left;	
+				margin-top: 8px;															
+
+										
+				td{
+	
+				text-align: left;
+				font-size: 15px;							
+				}
+ 			}
+	}
+
+	body{
+		width: 80%;
+		margin: auto;
+
+		.top{
+			margin-top: 0px;
+			background: $azul;
+			color:white;
+			@include fle;
+			height: 55px;	
+			align-items: center;
+			text-align: center;
+
+					.menu{
+				 	flex-grow: 1;
+				 	@include fle;
+				 	align-items: center;
+				 	padding: 5px;
+				 	text-align: center;
+				 	
+
+							h3{
+								font-weight: bold;
+								margin-right: 33px;
+								margin-left: 10px;
+							}
+
+							
+
+						img{
+
+							margin-left: 20px;
+							width: 30px;
+							height: 30px;
+						}
+
+			 		ul{		
+
+
+			 			list-style: none;
+			 			padding: 5px;
+			 			
+
+			 			li{
+			 				display: inline;
+			 				border-left: solid 1px #347b99;
+							padding: 19px;
+
+
+
+								&:last-child{
+									border-right:solid 1px #347b99;
+
+								}
+
+			 					
+
+
+				 				a{
+				 					padding:5px;
+									
+									color:white;
+									text-decoration: none;
+									font-weight: normal;
+									font-size: 11px;
+									
+
+				 				}
+			 			
+
+				 			}
+
+				 			li a:hover{
+				 			color: #dfe075;
+				 			}
+			 		}
+			 	
+			 			
+
+				}
+		
+				.usuario{
+					
+					flex-grow: 1;
+					
+					text-align: right;
+					padding: 20px;
+					height: 100%;
+					@include fle;
+					
+
+
+
+
+											
+
+							h4{ 
+
+								
+
+						font-weight: $n;						
+						display: inline;
+						margin-right: 10px;
+						margin-bottom: 30px;
+						align-items: center;
+						font-size: 14px;
+
+						#pagebody #content .cordiv {
+									
+									margin:100px;	
+									
+									}
+
+											
+							img{
+								
+								
+								margin-left:7px;
+								height: 7px;
+								width: 11px;
+								margin-right: 0;
+								
+
+
+							}
+
+
+						
+							}
+						.im{
+
+							flex-grow:1;
+					
+												
+							img{
+																					
+								@include cari;	
+								margin-top: 9px;
+								margin-right: 8px;										
+								
+					
+								
+							}
+
+
+							}
+					
+				}
+
+		}
+
+	.fundocorpo{
+		background: #d9dede;
+		color:$azul; 
+		padding: 25px;
+
+				.linha1{
+				
+				@include fle;
+				margin-bottom: 0;
+
+
+					.cli1{
+
+						width: 33%;
+						@include flec;
+
+							.cliente1{
+								@include clicli;
+								@include fle;
+
+								.icli1{
+									
+
+									h4{
+
+										@include perfil;
+										background:$azulc;
+										
+
+									}
+
+								}
+
+								.clicli1{
+									width: 100%;
+									margin-left: 10px;
+									@include fle;
+									justify-content: space-between;
+
+
+									.cli10{
+										width: 80%;
+
+									}
+
+									.star1{
+										width: 20%;
+
+										img{
+										@include star;
+										}
+
+
+									}
+
+
+								}
+
+							}
+
+
+							.ass1{
+								
+								@include ass;
+
+								
+
+									@include table;
+
+									img{
+										width: 12px;
+										height:12px;
+										margin:0;
+										
+									}
+								
+								
+
+								.foto{
+
+									img{
+										@include cari;
+									}
+								}
+
+							}
+
+
+						
+
+					}
+
+					.cli2{
+						width: 33%;
+						@include flec;
+
+							.cliente2{
+								
+								@include clicli;
+								@include fle;
+
+								.icli2{
+									
+
+									h4{
+
+										@include perfil;
+										background:$rosa;
+										
+
+									}
+
+								}
+
+								.clicli2{
+									width: 100%;
+									margin-left: 10px;
+									@include fle;
+									justify-content: space-between;
+
+
+									.cli20{
+										width: 80%;
+
+									}
+
+									.star2{
+										width: 20%;
+
+										img{
+										@include star;
+										}
+
+
+									}
+
+
+								}															
+
+								
+
+
+							}
+
+							.ass2{
+								height: 70%;
+								@include ass;
+
+								@include table;
+
+								.foto2{
+
+									img{
+										@include cari;
+									}
+								}
+
+							}
+
+							
+
+					}
+
+					.cli3{
+						width: 33%;
+						@include flec;
+
+						.cliente3{
+							@include clicli;
+							@include fle;
+
+								.icli3{
+									
+									h4{
+
+										@include perfil;
+										background:$rosa;
+										
+
+									}
+
+								}
+
+								.clicli3{
+									width: 100%;
+
+									margin-left: 10px;
+									@include fle;
+									justify-content: space-between;
+
+
+									.cli30{
+										width: 80%;
+
+									}
+
+									.star3{
+										width: 20%;
+
+										img{
+										@include star;
+										}
+
+
+									}
+
+
+								}
+
+						}
+						.ass3{
+							@include ass;
+
+							@include table;
+
+									img{
+										width: 12px;
+										height:12px;
+										margin:0;
+									}
+								
+
+								.foto3{
+
+									img{
+										@include cari;
+									}
+								}
+						}
+
+
+					}
+				}
+				.linha2{
+		
+				@include fle;
+				margin-bottom: 0;
+
+
+			.cli4{
+
+				width: 33%;
+				@include flec;
+
+				.cliente4{
+					@include clicli;
+					@include fle;
+
+								.icli4{
+									
+
+									h4{
+
+										@include perfil;
+										background:#58b07e;
+										padding: 15px 15px 15px 15px; 										
+
+									}
+
+								}
+
+								.clicli4{
+									width: 100%;
+									margin-left: 10px;
+									@include fle;
+									justify-content: space-between;
+
+
+									.cli40{
+										width: 80%;
+
+									}
+
+									.star4{
+										width: 20%;
+
+										img{
+										@include star;
+
+										}
+
+
+									}
+
+
+								}
+				}
+				.ass4{
+					@include ass;
+
+					@include table;
+
+					.foto4{
+
+						img{
+							@include cari;
+						}
+					}
+				}
+
+				
+
+			}
+
+			.cli5{
+				width: 33%;
+				@include flec;
+
+						.cliente5{
+							@include clicli;
+							@include fle;
+
+								.icli5{
+									
+
+									h4{
+
+										@include perfil;
+										background:$azulc;
+										padding: 15px 15px 15px 15px;
+
+									}
+
+								}
+
+								.clicli5{
+									width: 100%;
+									margin-left: 10px;
+									@include fle;
+									justify-content: space-between;
+
+
+									.cli50{
+										width: 80%;
+
+									}
+
+									.star5{
+										width: 20%;
+
+
+										img{
+										@include star;
+
+										}
+
+
+									}
+
+
+								}
+
+
+
+						}
+						.ass5{
+							@include ass;
+							@include table;
+
+							.foto5{
+
+									img{
+										@include cari;
+									}
+								}
+						}
+				
+			}
+
+			.cli6{
+				width: 33%;
+				@include flec;
+
+						.cliente6{
+							@include clicli;
+							@include fle;
+
+								.icli6{
+									
+
+									h4{
+
+										@include perfil;
+										background:$azulc;
+										
+
+									}
+
+								}
+
+								.clicli6{
+									width: 100%;
+									margin-left: 10px;
+									@include fle;
+									justify-content: space-between;
+
+
+									.cli60{
+										width: 80%;
+
+									}
+
+									.star6{
+										width: 20%;
+
+
+										img{
+										@include star;
+
+										}
+
+
+									}
+
+
+								}
+
+
+
+						}
+						.ass6{
+							@include ass;
+							@include table;
+
+							.foto6{
+
+									img{
+										@include cari;
+									}
+								}
+						}
+
+
+				}
+		}
+
+		.quadrado {
+				background: #f5f5f5;
+				padding: 10px;
+				margin-top: 0;     /* poderia ter usado margin: 20px 0*/
+				margin-bottom:15px;
+				height: 110px;
+				margin-right: 15px;
+
+
+
+
+		}
+	}
+}
+
